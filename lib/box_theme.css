@@ -1,0 +1,77 @@
+:root {
+    --accent: crimson;
+    --dull: gray;
+    /* --fg: black; */
+    --fg: white;
+    /* --bg: wheat; */
+    --bg: black;
+}
+
+html {
+    color: var(--fg);
+    background-color: var(--bg);
+
+    /* font-family: "Open Sans", Verdana, "Noto Sans", sans-serif; */
+    font-family: monospace;
+    font-size: 1em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.box {
+    background-color: var(--bg);
+    border: 1px solid var(--accent);
+    box-shadow: 0.5em 0.5em 0px var(--accent);
+
+    flex: 1 1 100%;
+    padding: 1em;
+
+    min-width: 32ch;
+}
+.box h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+a {
+    color: var(--fg);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--fg);
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    font-style: italic;
+}
+a.dead {
+    color: var(--dull);
+}
+a.dead:hover {
+    text-decoration: none;
+}
+
+embed {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--accent);
+}
+
+code {
+    /* border: 1px solid; */
+    color: var(--dull);
+    /* padding: 0 0.5ch; */
+}
+
+p + p {
+    margin-top: 1em;
+}

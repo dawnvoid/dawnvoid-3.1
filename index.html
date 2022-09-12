@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dawn</title>
+
+        <link rel="stylesheet" type="text/css" href="lib/reset.css">
+        <link rel="stylesheet" type="text/css" href="lib/box_theme.css">
+
+        <style>
+            :root {
+                --accent: crimson;
+                --dull: gray;
+                /* --fg: black; */
+                --fg: white;
+                /* --bg: wheat; */
+                --bg: black;
+            }
+
+            header {
+                text-align: center;
+
+                margin-bottom: 1em;
+            }
+            header h1 {
+                color: var(--accent);
+
+                font-weight: bold;
+            }
+            header q {
+                color: var(--dull);
+            }
+
+            footer {
+                color: var(--dull);
+
+                text-align: center;
+
+                margin-top: 1em;
+            }
+
+            table {
+                color: white;
+                background-color: #222;
+                border: 1px solid var(--accent);
+
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            table caption {
+                color: white;
+                background-color: var(--accent);
+
+                text-align: left;
+            }
+            td {
+                white-space: nowrap;
+            }
+
+            embed.file-embed {
+                /* color: var(--fg); */
+                /* background-color: var(--bg); */
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="font-size: 8em; line-height: 1em;">home</h1>
+            <q>thanks for disabling javascript</q>
+        </header>
+
+        <main>
+            <section class="box" style="text-align: center;">
+                <p>
+                    Hello, traveler. It's been a while.
+                </p>
+            </section>
+            <section class="box" style="flex: 1 1 20%;">
+                <h2>ABOUT</h2>
+                <table>
+                    <caption>IDENTIFICATION CARD</caption>
+                    <tr>
+                        <td>NAME</td>
+                        <td>dawn</td>
+                    </tr>
+                    <tr>
+                        <td>AGE</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>CLASS</td>
+                        <td>C2</td>
+                    </tr>
+                    <tr>
+                        <td>LAST_BASELINE</td>
+                        <td>2022-08-30 PASS</td>
+                    </tr>
+                    <tr>
+                        <td>STATUS</td>
+                        <td>OK</td>
+                    </tr>
+                </table>
+                <p>
+                    Hi! Welcome to my site.
+                </p>
+                <p>
+                    Please leave a comment on my guestbook if you want!
+                </p>
+            </section>
+
+            <nav class="box" style="flex: 1 2 30%; text-align: center;">
+                <h2>LINKS</h2>
+                <ul>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                    <li><a href="/blog.html">posts</a></li>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                    <li><a href="/not_found.html" class="dead">offline</a></li>
+                </ul>
+            </nav>
+
+            <section class="box" style="flex: 1 1 20%;">
+                <h2>
+                    UPDATE LOG
+                </h2>
+                <ol>
+                    <li>[2022-08-30 5:23:42] created rough layout for main page.</li>
+                </ol>
+            </section>
+
+            <section class="box" style="flex: 1 1 40%;">
+                <h2>BASELINE.TXT</h2>
+                <code><embed type="text/plain" src="/index_baseline.txt" class="file-embed" style="min-height: 12em;"></code>
+            </section>
+            
+            <section class="box" style="flex: 1 1 40%;">
+                <h2>RADIO</h2>
+                <audio controls style="width: 100%;">
+                    <!-- <source src="https://cdn.discordapp.com/attachments/1014645797532487762/1014645892923531324/Home_-_Head_First.mp3"> -->
+                    <source src="/puzzle/5.wav">
+                </audio>
+            </section>
+
+            
+        </main>
+        
+        <footer>
+            &copy; your mom 2022
+        </footer>
+    </body>
+</html>

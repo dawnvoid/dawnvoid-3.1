@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dawn</title>
+
+        <link rel="stylesheet" type="text/css" href="lib/reset.css" />
+        <link rel="stylesheet" type="text/css" href="lib/box_theme.css">
+
+        <style>
+            :root {
+                --accent: crimson;
+                --dull: gray;
+                /* --fg: black; */
+                --fg: white;
+                /* --bg: wheat; */
+                --bg: black;
+            }
+
+            header {
+                text-align: center;
+
+                margin-bottom: 1em;
+            }
+            header h1 {
+                color: var(--accent);
+
+                font-weight: bold;
+            }
+            header q {
+                color: var(--dull);
+            }
+
+            footer {
+                color: var(--dull);
+
+                text-align: center;
+
+                margin-top: 1em;
+            }
+
+            table {
+                color: white;
+                background-color: #222;
+                border: 1px solid var(--accent);
+
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            table caption {
+                color: white;
+                background-color: var(--accent);
+
+                text-align: left;
+            }
+            td {
+                white-space: nowrap;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="font-size: 8em; line-height: 1em;">blog</h1>
+            <q>thanks for disabling javascript</q>
+        </header>
+
+        <main>
+            <section class="box" style="text-align: center;">
+                <p>
+                    Hello, traveler. It's been a while.
+                </p>
+            </section>
+            <section class="box" style="flex: 1 1 70%;">
+                <h2>ABOUT</h2>
+                <div class="shadow">
+
+                    <table>
+                        <caption>IDENTIFICATION CARD</caption>
+                        <tr>
+                            <td>NAME</td>
+                            <td>dawn</td>
+                        </tr>
+                        <tr>
+                            <td>AGE</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>CLASS</td>
+                            <td>C2</td>
+                        </tr>
+                        <tr>
+                            <td>LAST_BASELINE</td>
+                            <td>2022-08-30 PASS</td>
+                        </tr>
+                        <tr>
+                            <td>STATUS</td>
+                            <td>OK</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>
+                    Hi! Welcome to my site.
+                </p>
+                <p>
+                    Please leave a comment on my guestbook if you want!
+                </p>
+            </section>
+
+            <section class="box" style="flex: 1 1 20%;">
+                <h2>justify-content: center</h2>
+                <p>
+                    <code>justify-content: center;</code> is broken. When the screen gets too small, items inside can overflow the left/right edges. However, the scrollbar will only let you scroll to the right. Anything on the left side is inaccessible.
+                </p>
+                <p>
+                    A better approach is to use <code>justify-content: left;</code> on your flexbox and <code>margin-left: auto; margin-right: auto;</code> on the offending child. This way, overflows will only go past the right edge and will be scrollable.
+                </p>
+
+            </section>
+            
+        </main>
+        
+        <footer>
+            &copy; your mom 2022
+        </footer>
+    </body>
+</html>

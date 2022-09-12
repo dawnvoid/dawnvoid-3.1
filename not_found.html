@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dawn</title>
+
+        <link rel="stylesheet" type="text/css" href="lib/reset.css" />
+
+        <style>
+            :root {
+                --accent: crimson;
+                --dull: gray;
+                --fg: white;
+                --bg: black;
+            }
+
+            html {
+                color: white;
+                background-color: black;
+
+                /* font-family: "Open Sans", Verdana, "Noto Sans", sans-serif; */
+                font-family: monospace;
+                font-size: 1em;
+
+                background-image: url('bg/nurple-static-bright.gif');
+                background-repeat: repeat;
+            }
+
+            footer {
+                color: var(--dull);
+
+                text-align: center;
+
+                margin-top: 1em;
+            }
+
+            main {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:active {
+                font-style: italic;
+            }
+            a.dead {
+                color: var(--dull);
+            }
+            a.dead:hover {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <nav style="text-align: center;">
+                <p>lost?</p>
+                <a href="/">go home</a>
+            </nav>
+        </main>
+        
+        <footer>
+            &copy; your mom 2022
+        </footer>
+    </body>
+</html>
